@@ -24,6 +24,7 @@ public class Main3 {
 //that is
         //day laf dau
         //thu them aln nua
+        // check dong bo master 2
         // check dong bo master
         // check dong bo lan 2
         if (glfwInit() != 1) {
