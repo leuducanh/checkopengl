@@ -1,4 +1,4 @@
-/*
+﻿/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -22,7 +22,7 @@ import static org.lwjgl.opengl.GL11.*;
 public class Main3 {
 
     public Main3() {
-
+	//common men
         if (glfwInit() != 1) {
             System.err.println("GLFW failed!!!!");
             System.exit(1);
