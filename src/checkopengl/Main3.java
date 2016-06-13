@@ -1,8 +1,3 @@
-﻿/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package checkopengl;
 
 import java.io.File;
@@ -24,12 +19,10 @@ public class Main3 {
     public Main3() {
     	
     	//abc
-<<<<<<< HEAD
 	//common men ok
-=======
 	//common men
 //that is
->>>>>>> refs/heads/change-main3
+        //day laf dau
         if (glfwInit() != 1) {
             System.err.println("GLFW failed!!!!");
             System.exit(1);
