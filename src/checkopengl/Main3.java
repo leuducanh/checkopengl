@@ -22,8 +22,14 @@ import static org.lwjgl.opengl.GL11.*;
 public class Main3 {
 
     public Main3() {
+    	
+    	//abc
+<<<<<<< HEAD
+	//common men ok
+=======
 	//common men
 //that is
+>>>>>>> refs/heads/change-main3
         if (glfwInit() != 1) {
             System.err.println("GLFW failed!!!!");
             System.exit(1);
