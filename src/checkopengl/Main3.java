@@ -22,6 +22,8 @@ import static org.lwjgl.opengl.GL11.*;
 public class Main3 {
 
     public Main3() {
+    	
+    	//abc
 <<<<<<< HEAD
 	//common men ok
 =======
