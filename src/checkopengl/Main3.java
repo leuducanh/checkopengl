@@ -23,6 +23,7 @@ public class Main3 {
 	//common men
 //that is
         //day laf dau
+        //thu them aln nua
         if (glfwInit() != 1) {
             System.err.println("GLFW failed!!!!");
             System.exit(1);
