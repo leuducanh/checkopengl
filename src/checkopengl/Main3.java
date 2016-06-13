@@ -25,6 +25,7 @@ public class Main3 {
         //day laf dau
         //thu them aln nua
         // check dong bo master 2
+        // check dong bo master
         if (glfwInit() != 1) {
             System.err.println("GLFW failed!!!!");
             System.exit(1);
