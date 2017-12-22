@@ -24,13 +24,10 @@ import static org.lwjgl.opengl.GL11.*;
  */
 public class Main4 {
 
-    public Main4() {
-        if (glfwInit() != 1) {
-            System.err.println("GLFW failed!!!!");
-            System.exit(1);
-        }
-
-        long win = glfwCreateWindow(1280, 960, "Window", 0, 0);
+    public void Main() {
+   
+           glfwInit();
+        long win = glfwCreateWindow(1280, 960, "window", 0, 0);
 
         glfwShowWindow(win);
 
@@ -161,7 +158,7 @@ public class Main4 {
         ShaderSphere shaderSphere = new ShaderSphere("shader1");
 
        
-        while (glfwWindowShouldClose(win) != 1) {
+        while (true) {
             glEnable(GL11.GL_DEPTH_TEST); // để open gl nhận biết cái nào vẽ trước
             glClear(GL_COLOR_BUFFER_BIT | GL11.GL_DEPTH_BUFFER_BIT);// đưa toàn bộ hình về đen
             glfwPollEvents();
@@ -635,7 +632,7 @@ public class Main4 {
     }        
     
     public static void main(String[] args) {
-        new Main4();
+        new Main4().Main();
     }
 
     

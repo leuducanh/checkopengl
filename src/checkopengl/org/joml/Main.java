@@ -27,11 +27,7 @@ public class Main {
     
     
     public Main(){
-         
-        if(glfwInit() != 1){
-            System.err.println("GLFW failed!!!!");
-            System.exit(1);
-        }
+      
         
         long win = glfwCreateWindow(1280, 960, "Window", 0, 0);
         
@@ -168,7 +164,7 @@ Textture tex = new Textture(new File("res\\Win.png").getAbsolutePath()+"");
         double angdeg = 0f;
         float increase = -0.5f;
         float scale = 1;
-        while(glfwWindowShouldClose(win) != 1){
+        while(glfwWindowShouldClose(win)){
             glEnable(GL11.GL_DEPTH_TEST); // để open gl nhận biết cái nào vẽ trước
             glClear(GL_COLOR_BUFFER_BIT|GL11.GL_DEPTH_BUFFER_BIT);// đưa toàn bộ hình về đen
             glfwPollEvents();

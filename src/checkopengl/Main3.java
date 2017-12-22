@@ -14,6 +14,8 @@ import static org.lwjgl.opengl.GL11.*;
  *
  * @author l
  */
+
+// Ko chay cai nay chay Main 4
 public class Main3 {
 
     public Main3() {
@@ -26,11 +28,8 @@ public class Main3 {
         //thu them aln nua
         // check dong bo master 2
         // check dong bo master
-        if (glfwInit() != 1) {
-            System.err.println("GLFW failed!!!!");
-            System.exit(1);
-        }
-
+       
+glfwInit();
         long win = glfwCreateWindow(1280, 960, "Window", 0, 0);
 
         glfwShowWindow(win);
@@ -160,7 +159,7 @@ public class Main3 {
         float scale = 1;
         float in = 0.5f;
         boolean flag1 = true;
-        while (glfwWindowShouldClose(win) != 1) {
+        while (true) {
             glEnable(GL11.GL_DEPTH_TEST); // để open gl nhận biết cái nào vẽ trước
             glClear(GL_COLOR_BUFFER_BIT | GL11.GL_DEPTH_BUFFER_BIT);// đưa toàn bộ hình về đen
             glfwPollEvents();
